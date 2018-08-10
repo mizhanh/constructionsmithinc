@@ -1,0 +1,67 @@
+#footer {
+	margin-top: 10%;
+	padding: 10px;
+	background-color: #e3dfdf;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.stickyFooter {
+	background-color: black;
+	color: white;
+	height: 35px;
+	padding: 8px;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+}
+
+#firstCol {
+	margin-left: 15%;
+}
+
+img {
+	padding-bottom: 10px;
+}
+
+#homePage {
+	padding-top: 70px;
+}
+
+#secondCol, #thirdCol {
+	padding-top: 30px;
+}
+
+p {
+	margin-bottom: 5px;
+}
+
+#footerAppt{
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+
+.fa.fa-facebook-square {
+	padding-top: 10px;
+	font-size: 40px;
+	color: #3b5998;
+	padding-left: 20px;
+}
+
+#social-icon {
+	display: inline-block;
+}
+
+.fa.fa-linkedin-square {
+	font-size: 40px;
+	color: #0077b5;
+	padding-left: 20px;
+	padding-top: 10px;
+}
+
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  #secondCol, #thirdCol {
+    padding-left: 18%;
+  }
+  
+}
