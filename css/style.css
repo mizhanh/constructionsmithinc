@@ -71,6 +71,10 @@ label {
 
 #calc-btn {
     margin-left: 10px;
+    background-color: #00FFFF;
+    padding: 10px;
+    color: white;
+    border-radius: 3px;
 }
 
 select {
