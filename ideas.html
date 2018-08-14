@@ -155,9 +155,6 @@
     </section>
   </div>
 
-
-
-	
   <!-- Calculators section -->
   <div class="row">
     <div class="container-fluid" id="estimator-section">
@@ -246,7 +243,6 @@
                         </div>
                         <div class="col-md-4">
                           <div class="row" id="calc-results">
-                            <!-- <label>US $</label> -->
                           </div>
                         </div>
                       </div>
@@ -258,17 +254,351 @@
           </div>
         </div>
       </div>
-      <br />
-
-   
-
-
-         
+      <br />       
     </div>
       </div>
     </div>
   </div>
 
+  <!-- Kitchen Calculator -->
+   <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="panel-group">
+              <div class="panel panel-primary">
+                <a class="panel-primary" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">Kitchen Remodel Budget Estimator</h4>
+                  </div>
+                </a>
+                <div id="collapseTwo" class="panel-collapse collapse">
+                  <form>
+                    <div class="panel-body">
+
+                    <!-- input on the kitchen size -->
+                    <div class="row">
+                      <div class="col-md-5">
+                        <label>Kitchen Size</label>
+                      </div>
+                      <div class="col-md-5">
+                        <Input 
+                          type="text"
+                          id="kitchen-size-input"
+                          placeholder="Kitchen square footage"
+                          />   
+                      </div>
+                      <label>sq. ft.</label>
+                    </div>
+                    <br />
+                    
+                    <!-- input on the countertop size -->
+                    <div class="row">
+                      <div class="col-md-5">
+                        <label>Countertop Size</label>
+                      </div>
+                      <div class="col-md-5">
+                        <Input 
+                          type="text"
+                          id="countertop-size-input"
+                          placeholder="Total square footage"
+                          />   
+                      </div>
+                      <label>sq. ft.</label>
+                    </div>
+                    <br />
+
+                    <!-- input on countertop materials -->
+                    <div class="row">
+                      <div class="col-md-5">
+                        <label>Countertop Material</label>
+                      </div>
+                      <div class="col-md-5">
+                        <select name="countertop-material" id="countertopMaterial">
+                          <option value="-1" abled>Select Option</option>
+                          <option value="granite">Granite</option>
+                          <option value="laminate">Laminate</option>
+                          <option value="quartz">Quartz</option>
+                        </select>   
+                      </div>  
+                    </div>
+                    <br />
+
+                    <!--input on the cabinets length-->
+                    <div class="row">
+                      <div class="col-md-5">
+                        <label>Cabinets Length Size</label>
+                      </div>
+                      <div class="col-md-5">
+                        <Input 
+                          type="text"
+                          id="cabinets-length-input"
+                          placeholder="Cabinets length"
+                          />   
+                      </div>
+                      <label>linear ft.</label>
+                    </div>
+                    <br />
+
+                    <!-- input on cabinets quality --> 
+                    <div class="row">
+                      <div class="col-md-5">
+                        <label>New Install Cabinets</label>
+                      </div>
+                      <div class="col-md-5">
+                        <select name="cabinets-quality" id="cabinetsQuality">
+                          <option value="-1" abled>Select Option</option>
+                          <option value="basic-cab">Basic</option>
+                          <option value="enhanced-cab">Enhanced (with Island)</option>
+                          <option value="premium-cab">Premium (with Island)</option>
+                        </select>
+                      </div>  
+                    </div> 
+                    <br />
+                  
+                  <!-- input on kitchen fixtures -->
+                    <div class="row">
+                      <div class="col-md-5">
+                        <label>Kitchen Fixtures (Sink, Faucet, Disposal)</label>
+                      </div>
+                      <div class="col-md-5">
+                        <select name="kitchen-fixtures" id="fixturesQuality">
+                          <option value="-1" abled>Select Option</option>
+                          <option value="basic-fix">Basic</option>
+                          <option value="mid-fix">Mid Range</option>
+                          <option value="premium-fix">Premium</option>
+                        </select>   
+                      </div>  
+                    </div>
+                    <br />
+
+                 <!-- input on kitchen flooring -->
+                    <div class="row">
+                      <div class="col-md-5">
+                        <label>New Kitchen Flooring</label>
+                      </div>
+                      <div class="col-md-5">
+                        <select name="floor-type" id="floorType">
+                          <option value="-1" abled>Select Option</option>
+                          <option value="tile-floor">New Tile Flooring</option>
+                          <option value="hardwood-floor">New Hardwood Flooring</option>
+                          <option value="lineoleum-floor">New Linoleum Flooring</option>
+                          <option value="laminate-floor">New Laminate Flooring</option>
+                        </select>   
+                      </div>  
+                    </div>
+                    <br />
+
+                  <!-- input on appliances -->
+                    <div class="row">
+                      <div class="col-md-5">
+                        <label>New Appliances (Fridge, Oven, Rangehood)</label>
+                      </div>
+                      <div class="col-md-5">
+                        <select name="appliances" id="appliancesQuality">
+                          <option value="-1" abled>Select Option</option>
+                          <option value="basic-app">Basic Appliances</option>
+                          <option value="mid-app">Mid Range Appliances</option>
+                          <option value="premium-app">Premium Appliances</option>
+                          <option value="premium-builtin-app">Premium Built-In Appliances</option>
+                        </select>   
+                      </div>  
+                    </div>
+                    <br />
+                   
+                  <!-- input on paint walls -->
+                    <div class="row">
+                      <div class="col-md-5">
+                        <label>Paint Walls</label>
+                      </div>
+                      <div class="col-md-5">
+                        <select name="paintWalls" id="paintOption">
+                          <option value="no" abled>No</option>
+                          <option value="yes">Yes</option>
+                        </select>   
+                      </div>  
+                    </div>
+                    <br />
+                  </div>
+                  <br />
+
+                <!-- calculating button -->
+                  <div class="panel-body">
+                    <button id="kitchen-calc-btn">Calculate Estimated Cost</button>
+                  </div> 
+
+                 <!-- display results from calculator -->
+                  <div class="panel panel-default" id="cost-display">
+                    <div class="panel-body">
+                      <div class="row">
+                        <div class="col-md-8">
+                          <label>Estimated Cost: </label>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="row" id="kitchen-calc-results">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />       
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <!-- Floor Replacement Calculator -->
+   <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="panel-group">
+              <div class="panel panel-primary">
+                <a class="panel-primary" data-toggle="collapse" data-parent="#accordion3" href="#collapseThree">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">Floor Replacement Budget Estimator</h4>
+                  </div>
+                </a>
+                <div id="collapseThree" class="panel-collapse collapse">
+                  <form>
+                    <div class="panel-body">
+
+                    <!-- input on the floor length -->
+                    <div class="row">
+                      <div class="col-md-5">
+                        <label>Floor Length</label>
+                      </div>
+                      <div class="col-md-5">
+                        <Input 
+                          type="text"
+                          id="floorLength"
+                          placeholder="length"
+                          />
+                        <label>ft. by </label>
+                      </div>
+                    </div>
+                    <br />
+                    
+                     <!-- input on the floor width -->
+                    <div class="row">
+                      <div class="col-md-5">
+                        <label>Floor Width</label>
+                      </div>   
+                      <div class="col-md-5">
+                        <Input 
+                          type="text"
+                          id="floorWidth"
+                          placeholder="width"
+                          />
+                        <label>ft.</label>
+                      </div>     
+                    </div>
+                    <br />
+
+                    <!-- input on flooring material -->
+                    <div class="row">
+                      <div class="col-md-5">
+                        <label>Flooring Material</label>
+                      </div>
+                      <div class="col-md-5">
+                        <select name="material" id="floorOption">
+                          <option value="-1" abled>Select Option</option>
+                          <option value="carpets">Carpets</option>
+                          <option value="hardwood">Hardwood</option>
+                          <option value="laminate">Laminate</option>
+                          <option value="naturalStone">Natural Stone</option>
+                          <option value="porcelain">Porcelain / Tile </option>
+                          <option value="vinyl">Vinyl</option>
+                        </select>
+                      </div>  
+                    </div> 
+                    <br />
+                    
+                  <!-- input on quality of materials -->
+                    <div class="row">
+                      <div class="col-md-5">
+                        <label>Material Quality</label>
+                      </div>
+                      <div class="col-md-5">
+                        <select name="quality" id="floorQuality">
+                          <option value="-1" abled>Select Option</option>
+                          <option value="low-end">Low-End</option>
+                          <option value="mid-range">Mid Range</option>
+                          <option value="hi-end">High-End</option>
+                        </select>   
+                      </div>  
+                    </div>
+                    <br />
+
+                  <!-- input on removing old flooring -->
+                    <div class="row">
+                      <div class="col-md-5">
+                        <label>Remove Old Flooring</label>
+                      </div>
+                      <div class="col-md-5">
+                        <select name="remove-floor" id="removeOldFloor">
+                          <option value="-1" abled>Select Option</option>
+                          <option value="no">No</option>
+                          <option value="yes-carpet">Yes - Carpet</option>
+                          <option value="yes-hardwood">Yes - Hardwood</option>
+                          <option value="yes-laminate">Yes - Laminate</option>
+                          <option value="yes-tile">Yes - Tile</option>
+                        </select>   
+                      </div>  
+                    </div>
+                     <br />
+
+                  <!--input on subfloor installation -->
+                    <div class="row">
+                      <div class="col-md-5">
+                        <label>Install Subfloor?</label>
+                      </div>
+                      <div class="col-md-5">
+                        <select name="installSubfloor" id="subfloorInstallOption">
+                          <option value="-1" abled>Select Option</option>
+                          <option value="no">No</option>
+                          <option value="yes">Yes</option>
+                        </select>   
+                      </div>  
+                    </div>
+                     <br />
+
+                   <!-- calculating button -->
+                  <div class="panel-body">
+                    <button id="calc-btn">Calculate Estimated Cost</button>
+                  </div> 
+
+                  <!-- display results from calculator -->
+                  <div class="panel panel-default" id="cost-display">
+                    <div class="panel-body">
+                      <div class="row">
+                        <div class="col-md-8">
+                          <label>Estimated Cost: </label>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="row" id="floor-calc-results"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />       
+    </div>
+  </div>
+    </div>
+  </div>
 
 	<!-- Footer -->
 	
@@ -306,7 +636,9 @@
 
 <!-- scripts -->
     <script src="js/ideas.js" type="text/javascript"></script>
-    <script src="js/calculator.js" type="text/javascript"></script>
+    <script src="js/bathroomCalculator.js" type="text/javascript"></script>
+    <script src="js/kitchenCalculator.js" type="text/javascript"></script>
+    <script src="js/floorReplacementCalculator.js" type="text/javascript"></script>
 
 </body>
 </html>

@@ -10,7 +10,6 @@ $("#calc-btn").on("click", function (){
 
   	calculateCost(); 
 
-
   	function calculateCost() {
   		var laborCostPerHr = 75;
     	var areaFloorsHrPerSqFt = 2;

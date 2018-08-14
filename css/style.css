@@ -69,8 +69,8 @@ label {
     margin-left: 25px;
 }
 
-#calc-btn {
-    margin-left: 10px;
+#calc-btn, #kitchen-calc-btn {
+    margin-left: 20px;
     background-color: #00FFFF;
     padding: 10px;
     color: white;
