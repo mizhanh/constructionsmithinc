@@ -11,7 +11,6 @@
   <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-
   <!-- Bootstrap -->
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
@@ -109,7 +108,7 @@
   </div>  
   
   <!-- Video Search form -->
-  <!-- <div class="container">
+  <div class="container">
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
         <h4>Ideas or Tips Search</h4>
@@ -118,7 +117,7 @@
             <div class="input-group">
               <input type="text" class="form-control" placeholder="Search topic" id="query" name="search">
               <div class="input-group-btn">
-                <button id="search-button" class="btn btn-default" type="submit" value="submit"><i class="glyphicon glyphicon-search"></i></button>
+                <button id="search-btn" class="btn btn-default" type="submit" value="submit"><i class="glyphicon glyphicon-search"></i></button>
               </div>
             </div>   
           </form>
@@ -126,34 +125,33 @@
       </div>
     </div>
   <br/>
+
+  <!-- iFrame YouTube -->
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <iframe width="450" height="375"
+        src="https://www.youtube.com/embed/hELeNZJAzDU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen position="relative"></iframe>
+      </iframe>
+      <iframe width="450" height="375"
+        src="https://www.youtube.com/embed/mpPZAVl3QhE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen position="relative"></iframe>
+      </iframe>
+      <iframe width="450" height="375"
+        src="https://www.youtube.com/embed/Hb2Qw73kNLk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen position="relative"></iframe>
+      </iframe>
+      <iframe width="450" height="375"
+        src="https://www.youtube.com/embed/S-lAahi7cck" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen position="relative"></iframe>
+      </iframe>
+    </div>
+  </div>
   
-  <!-Search video results - TBD -->
-  <!-- <div class="row">
-    <div class="col-md-10 col-md-offset-1" id="search-results">
-      <h4 style="text-align: center;">Search results display</h4>
-      
+  <!-- <!-Search video results - TBD -->
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1" id="search-results">  
     </div>
   </div>
 </div>
- -->
-  <!-- Testing -->
-  <div id="container">
-    <header>
-      <h1> Search video></h1>
-    </header>
-    <section>
-      <form id="search-form" name="search-form" onsubmit="return search()">
-          <div class="fieldcontainer">
-            <input type="search" id="query" class="search-field" placeholder="Search youtube...">
-            <input type="submit" name="search-btn" id="search-btn" value="">
-          </div>
-      </form>
-
-      <ul id="results"></ul>
-      <div id="buttons"></div>
-
-    </section>
-  </div>
+<br />
+<br />
 
   <!-- Calculators section -->
   <div class="row">
@@ -651,6 +649,8 @@
 
 <!-- scripts -->
     <script src="js/ideas.js" type="text/javascript"></script>
+    <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
+
     <script src="js/bathroomCalculator.js" type="text/javascript"></script>
     <script src="js/kitchenCalculator.js" type="text/javascript"></script>
     <script src="js/floorReplacementCalculator.js" type="text/javascript"></script>
