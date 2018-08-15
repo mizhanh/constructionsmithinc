@@ -140,6 +140,7 @@ $("#kitchen-calc-btn").on("click", function (){
 
       		totalKitchenCost = paintCost + floorCost + countertopCost + cabinetCost + fixturesCost + appliancesCost;
       			console.log(totalKitchenCost);
+            
    		} else {
    			paintCost = 0;
    			if (floorType === "New Tile Flooring") {

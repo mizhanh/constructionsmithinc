@@ -69,7 +69,7 @@ label {
     margin-left: 25px;
 }
 
-#calc-btn, #kitchen-calc-btn {
+#calc-btn, #kitchen-calc-btn, #floor-calc-btn {
     margin-left: 20px;
     background-color: #00FFFF;
     padding: 10px;
