@@ -10,6 +10,8 @@
 
   <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
 
   <!-- Bootstrap -->
   <!-- Latest compiled and minified CSS -->
@@ -20,6 +22,9 @@
   <script src="https://use.fontawesome.com/064a5d298d.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="http://fancyapps.com/fancybox/source/jquery.fancybox.css?v=2.1.5">
+ 
 
 </head>
 <body>
@@ -108,27 +113,27 @@
   </div>  
   
   <!-- Video Search form -->
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3">
-        <h4>Ideas or Tips Search</h4>
-        <div id="video-search-input">
-          <form>
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search topic" id="query" name="search">
-              <div class="input-group-btn">
-                <button id="search-btn" class="btn btn-default" type="submit" value="submit"><i class="glyphicon glyphicon-search"></i></button>
-              </div>
-            </div>   
-          </form>
-        </div>
-      </div>
-    </div>
-  <br/>
+  <div class="content">
+     <h4>Ideas & Tips Search</h4>
+            <div id="custom-search-input">
+                <div class="input-group col-md-12">
+                    <form id="search-form" name="search-form" onsubmit="return searchYoutube();">
+                        <input type="text" class="form-control" placeholder="Search...." id="search" />
+                        <span class="input-group-btn">
+                            <button class="btn btn-info btn-lg" type="submit" id="findNow">
+                                <i class="glyphicon glyphicon-search"></i>
+                            </button>
+                        </span>
+                    </form>
+                </div>
+            </div>
+  </div>
+    <div class= "col-md-10 col-md-offset-2" id="results"></div>
+  </div>
 
   <!-- iFrame YouTube -->
-  <div class="row">
-    <div class="col-md-10 col-md-offset-1">
+  <div class="row" id="seeded-videos">
+    <div class="col-md-10 col-md-offset-2">
       <iframe width="450" height="375"
         src="https://www.youtube.com/embed/hELeNZJAzDU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen position="relative"></iframe>
       </iframe>
@@ -143,17 +148,10 @@
       </iframe>
     </div>
   </div>
-  
-  <!-- <!-Search video results - TBD -->
-  <div class="row">
-    <div class="col-md-10 col-md-offset-1" id="search-results">  
-    </div>
-  </div>
-</div>
-<br />
-<br />
 
   <!-- Calculators section -->
+  <br />
+  <br />
   <div class="row">
     <div class="container-fluid" id="estimator-section">
       <div class="col-md-8 col-md-offset-2">

@@ -93,30 +93,60 @@ select {
     background-color: yellow;
 }
 
-#video-search-input {
-  width: 95%;
-}
-
-.clearfix{
-  clear: both;
-}
-
-#search-form{
-  display:block;
-  margin-bottom: 15px;
-}
-
-.fieldcontainer {
-  display: block;
-  position: relative;
-  width: 90%;
-  margin: 0 auto;
-}
-
 iframe {
-  display: inline-block;
-  padding: 25px;
+  padding: 10px;
+  margin-left: 10px;
 }
+
+#custom-search-input{
+    padding: 3px;
+    border: solid 1px #E4E4E4;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+#custom-search-input input{
+    border: 0;
+    box-shadow: none;
+    width: 93%;
+}
+
+#custom-search-input button{
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #666666;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input button:hover{
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input .glyphicon-search{
+    font-size: 23px;
+}
+
+.content {
+  position: relative;
+  margin: 60px auto;
+  width: 80%;
+  max-width: 650px;
+  z-index: 1;
+}
+
+#results li {
+    padding: 10px 0;
+    border-bottom: 1px dotted #ccc;
+    list-style: none;
+    overflow: auto;
+}
+
+
 
 
 /*Navbar CSS*/
