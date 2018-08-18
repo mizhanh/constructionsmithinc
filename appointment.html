@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Construction Smith Inc</title>
+  <!-- My CSS -->
+	<link rel='stylesheet' href='css/style.css'/>
+	<link rel='stylesheet' href='css/footer.css'/>
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
+
+  <!-- Bootstrap -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
+
+  <!-- Google fonts -->
+  <script src="https://use.fontawesome.com/064a5d298d.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="http://fancyapps.com/fancybox/source/jquery.fancybox.css?v=2.1.5">
+
+  <!-- Calendly badge widget begin -->
+	<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+	<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+	<script type="text/javascript">Calendly.initBadgeWidget({url: 'https://calendly.com/tilemandavid', text: 'SCHEDULE AN APPOINTMENT', color: '#00a2ff'});</script>
+<!-- Calendly badge widget end -->
+
+</head>
+<body>
+	<!-- Navbar -->
+	<nav class="navbar navbar-default fixed-top" role="navigation" style="height: 100px;">
+         <div class="navbar-header">
+         <!-- Toggle Button [handles opening navbar components on mobile screens]-->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" aria-hidden="true">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>   
+            </button>                  
+            <!-- Navbar Brand -->
+            <span class="navbar-brand"><img src="img/footer-logo.png"></span>
+         </div> 
+            
+      <!-- Navbar Collapse-->
+         <div class="navbar-collapse collapse">
+         <!-- Navbar Menu -->
+            <ul class="nav navbar-nav navbar-right" style="padding-top: 25px;font-size: 20px;">        
+               	<li><a href="home.html">HOME</a></li>
+               	<li><a href="portfolio.html">PORTFOLIO</a></li>
+    			<li><a href="ideas.html">IDEAS & TIPS</a></li>
+    			<li><a href="#">APPOINTMENTS</a></li>
+               	<li><a></a></li>
+            </ul>
+         </div>
+	</nav>
+
+	<!-- Carousel -->
+	<div class="container-fluid">
+		<div class="clearfix"></div>
+    	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    		<div class="phone2">
+    			<h3>Call for a FREE Consultation. 440.479.2028</h3>
+ 			</div>
+      	<!-- Indicators -->
+      	<ol class="carousel-indicators">
+        	<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        	<li data-target="#myCarousel" data-slide-to="1"></li>
+        	<li data-target="#myCarousel" data-slide-to="2"></li>
+        	<li data-target="#myCarousel" data-slide-to="3"></li>
+      	</ol>
+      	<!-- Wrapper for slides -->
+      	<div class="carousel-inner" style="width:100%; height: 230px;">
+        	<div class="item active">
+          		<img src="img/aboutTop.png" alt="Construction Smith Inc">
+          		<!--could add text here to overlay the billboard graphics <div class="carousel-caption"></div>-->
+        	</div>
+        	<div class="item">
+          		<img src="img/servicesTop.png" alt="Construction Smith Inc">
+          		<!--could add text here to overlay the billboard graphics <div class="carousel-caption"></div>-->
+        	</div>
+        	<div class="item">
+          		<img src="img/clientTop.png" alt="Construction Smith Inc">
+          		<!--could add text here to overlay the billboard graphics <div class="carousel-caption"></div>-->
+        	</div>
+        	<div class="item">
+          		<img src="img/contactTop.png" alt="Construction Smith Inc">
+          		<!--could add text here to overlay the billboard graphics <div class="carousel-caption"></div>-->
+        	</div>
+      	</div>
+      <!-- Left and right controls -->
+      	<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        	<span class="glyphicon glyphicon-chevron-left"></span>
+        	<span class="sr-only">Previous</span>
+      	</a>
+      	<a class="right carousel-control" href="#myCarousel" data-slide="next">
+        	<span class="glyphicon glyphicon-chevron-right"></span>
+        	<span class="sr-only">Next</span>
+      	</a>
+    	</div>	
+	</div>
+
+<!-- Appointment -->
+<div>
+    <a href="#" id="btn-sched" class="btn btn-md btn-primary" data-toggle="modal" data-target="#scheduleModal">SCHEDULE AN APPOINTMENT</a>
+      <div class="modal fade" id="scheduleModal" tabIndex="-1" role="dialog" aria-labelledby="scheduleModal" aria-hidden="true">
+        <div class="modal-dialog" id="sched-modal">
+          <div class="modal-content">
+            <div class="modal-header" id="sched-modal-header">
+              <h4 class="modal-title" id="mySchedLabel">Schedule An Appointment </h4>
+              <iframe
+                url='https://calendly.com/tilemandavid'
+                   width="100%"
+                   height="100%" 
+                   position="relative"
+                    />             
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+<!-- Footer -->
+	
+		<div class="container" id="footer">
+			<div class="row">
+				<div class="col-md-3" id="firstCol">
+					<img class="footerLogo" src="img/footer-logo.png" alt="img" />
+					<p>Construction Smith Inc. </p>
+					<p>Painesville, OH</p>
+					<p>440.479.2028</p>
+              		<a href="mailto: tilemandavid@gmail.com">tilemandavid@gmail.com</a>
+            	</div>
+            	<div class="col-md-3" id="secondCol">
+            		<p>Residential and Commercial Projects</p>
+              		<p>Bathroom Renovations</p>
+              		<p>Kitchen Renovations</p>
+              		<p>Basements, Pools, Fireplaces and more...</p>
+              		<p>Granite, Marble, Quartz, Tile, Wood</p>
+              		<p>New Construction Projects</p>
+             	</div>
+             	<div class="col-md-3" id="thirdCol">
+             		<p><strong>Fully Bonded and Insured</strong></p>
+              		<div class="row" id="social-icon">
+                		<a href="https://www.facebook.com/Construction-Smith-Inc-224425121442895"><i class="fa fa-facebook-square"></i>
+                		<a href="https://www.linkedin.com/in/david-smith-55494a69"><i class="fa fa-linkedin-square"></i></a>
+              		</div>
+             	</div>
+			</div>
+		</div>
+		<div class="stickyFooter">
+			<p style="font-size: 15px;">&copy; Copyright 2018. All Rights Reserved, Construction Smith Inc.</p>
+		</div>
+	</div>
+
+
+<!-- scripts -->
+    <script src="js/ideas.js" type="text/javascript"></script>
+    <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
+
+    <script src="js/bathroomCalculator.js" type="text/javascript"></script>
+    <script src="js/kitchenCalculator.js" type="text/javascript"></script>
+    <script src="js/floorReplacementCalculator.js" type="text/javascript"></script>
+
+</body>
+</html>

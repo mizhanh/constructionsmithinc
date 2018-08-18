@@ -146,8 +146,86 @@ iframe {
     overflow: auto;
 }
 
+/*Schedule appointment*/
+#btn-sched {
+  margin-left: 40%;
+  padding: 15px;
+}
 
+#appt {
+  margin-top: 10px;
+  margin-left: 100px;
+}
 
+#sched-modal {
+  width: 80%;
+  height: 700px;
+}
+
+#sched-modal-header{
+  width: 100%;
+  height: 650px;
+}
+
+/*Comments box*/
+button {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#btn-addcomments {
+  margin-top: 10px;
+  margin-left: 45%;
+  font-size: 15px;
+}
+
+#comment-input {
+  height: 200%;
+}
+
+#name-input {
+  width: 80%;
+  padding-left: 15px;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 6px;
+  height: 100%;
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+
+#comment-input {
+  width: 80%;
+  padding-left: 15px;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 6px;
+  height: 100%;
+  margin-left: 15px;
+}
+
+#comment-display {
+  font-family: 'Montserrat', sans-serif;
+  overflow-y: auto;
+  height: 400px;
+  font-size: 12px;
+}
+
+.btn.btn-lg.btn-success {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#myModalLabel {
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#comment-style {
+  font-style: italic;
+}
+
+#divide {
+  opacity: .3;
+}
 
 /*Navbar CSS*/
 
