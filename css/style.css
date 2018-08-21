@@ -21,7 +21,7 @@ h1 {
 
 h3 {
     text-align: center;
-    font-weight:bold;
+    font-weight: bold;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -258,8 +258,8 @@ button {
     display: block;
     height: 100%;
     padding: 0;
-}
-*/
+}*/
+
 
 /*.navbar {
   z-index: 100;
@@ -289,20 +289,16 @@ button {
   height: 100px;
 }
 
-#myNavbar{
-  padding-top: 20px;
-}
-
 .logo {
   padding-bottom:20px;
 }
 
+.navbar-collapse {
+  background-color: #DCDCDC;
+}
+
 .navbar-nav {
   float: right;
-}
-.navbar-nav-phone {
-  margin-left:400px;
-  color:black;
 }
 
 .navbar-brand {
@@ -337,10 +333,13 @@ button {
 @media screen and (max-width: 768px) {
   .navbar-nav {
     float: none;
-    text-align: center;
+    text-align: left;
     padding: 10px;
   }
 }
 
-
+.navbar-right {
+  padding: 30px;
+  margin-right: 5%;
+}
 
